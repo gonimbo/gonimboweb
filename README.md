@@ -1,2 +1,2 @@
 # gonimboweb
-Gonimbo website.
+Gonimbo website. Just a few imgages.
