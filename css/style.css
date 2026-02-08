@@ -1,16 +1,91 @@
 body {
-  background-color: lightgreen;
+  background-color: rgb(255, 255, 255);
 
   /* Smoothly transition the background color */
   transition: background-color .5s;
-}
-
-.player {
-  height: 95vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+article {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.banner {
+  font-size: 2.5rem;
+  font-family: 'Lobster', sans-serif;
+  color: #24154a;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  font-size: 2.5rem;
+  font-family: 'Lobster', sans-serif;
+  color: #24154a;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.harbors-main {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.jimmy-image {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.music-row {
+  display: flex;
+  flex: 1;
+}
+
+.stream-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+
+.album {
+  width: 100%;
+  flex: 1 1 0;
+}
+
+.stream-icon {
+  width: 50px;
+  padding-left: 2rem;
+}
+
+.apple-icon {
+  width: 50px;
+}
+
+.player {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif
 }
 
 .details {
@@ -18,16 +93,16 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .track-art {
-  margin: 25px;
-  height: 250px;
-  width: 250px;
-  background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  margin: 10px;
+  height: 225px;
+  width: 225px;
+  background-image: url("img/harbors.jpg");
   background-size: cover;
-  border-radius: 15%;
+  border-radius: 10%;
 }
 
 .now-playing {
@@ -35,10 +110,6 @@ body {
 }
 
 .track-name {
-  font-size: 2rem;
-}
-
-.track-artist {
   font-size: 1.5rem;
 }
 
@@ -114,4 +185,16 @@ i.fa-volume-down, i.fa-volume-up {
 
 i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
   cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    width: 1000px;
+    margin: auto;
+  }
+
+  .track-art {
+    height: 350px;
+    width: 350px;
+  }
 }
